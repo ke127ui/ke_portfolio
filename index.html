@@ -4,8 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>가은 포토폴리오</title>
+    <link rel="stylesheet" href="global.css">
 </head>
 <body>
-
+    <main>
+        <!-- 소개, 이력, 스킬 area -->
+        <article class="my-info" data-state="#about">
+            <ul class="info-tab">
+                <li class="tab01 is-active">
+                    <button data-state="#about" aria-label="선택됨">ABOUT ME</button>
+                </li>
+                <li class="tab02">
+                    <button data-state="#experience">EXPERIENCE</button>
+                </li>
+                <li class="tab03">
+                    <button data-state="#skill">SKILL</button>
+                </li>
+            </ul>
+            <div class="info-area">
+                <div class="info-header">
+                    <div class="my-cat">
+                        <img src="/" alt="">
+                    </div>
+                    <div class="contect-me">
+                        <h1>김가은 KAEUN KIM</h1>
+                        <p>1996.12.27 | 인천 거주</p>
+                        <p><a href="sms:010-5049-3592">010 5049 3592</a></p>
+                        <p><a href="mailto:xio03@naver.com">xio03@naver.com</a></p>
+                    </div>
+                </div>
+                <div class="info-main">
+                    <section class="info-aboutme" id="about">
+                        <h2>ABOUT ME</h2>
+                    </section>
+                    <section class="info-experience" id="experience">
+                        <h2>EXPERIENCE</h2>
+                    </section>
+                    <section class="info-skill" id="skill">
+                        <h2>SKILL</h2>
+                    </section>
+                </div>
+            </div>
+        </article>
+        <!-- 작업물 area -->
+        <article class="my-works">
+            <div class="web-section">
+                <!-- tab area -->
+                <div class="tab-section">
+                    <div class="window-btn">
+                        <span class="btn"></span>
+                        <span class="btn"></span>
+                        <span class="btn"></span>
+                    </div>
+                    <div class="tab-cont">
+                        <div class="works-tab">
+                            <div class="favicon_img"></div>
+                            <h3>work1</h3>
+                        </div>
+                    </div>
+                    <div class="add-btn">
+                        <span class="ico-add">+</span>
+                    </div>
+                </div>
+                <!-- url area -->
+                <div class="url-section">
+                    <div class="btn-area">
+                        <div class="btn-back"></div>
+                        <div class="btn-prev"></div>
+                        <div class="btn-stop"></div>
+                    </div>
+                    <div class="url-bar">
+                        <p>https://hiro961227.github.io/kaeun_pf/works</p>
+                        <span class="ico-bookmark"></span>
+                    </div>
+                    <div class="ico-its-me"></div>
+                </div>
+                <!-- main area -->
+                <section class="main-section">
+                    <h2>WORKS</h2>
+                    <div class="works-main">
+                        <h3>프로젝트 이름</h3>
+                        <div class="workspace">
+                            <div class="workspace-show">
+                                <div class="work-main-img"></div>
+                                <div class="work-url-btn">
+                                    <a href="#">view site</a>
+                                    <a href="#">view site</a>
+                                </div>
+                            </div>
+                            <div class="workspace-info">
+                                <p>작업물 설명 텍스트 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="works-btn-area">
+                        <button class="btn-prev">
+                            이전
+                        </button>
+                        <button class="btn-next">
+                            다음
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </main>
+    <div class="event-btn-area">
+        <div class="reboot"></div>
+        <div class="dark-mode"></div>
+    </div>
 </body>
 </html>

@@ -12,14 +12,14 @@
         <!-- 소개, 이력, 스킬 area -->
         <article class="my-info" data-state="#about">
             <ul class="info-tab">
-                <li class="tab01 is-active">
-                    <button data-state="#about" aria-label="선택됨">ABOUT ME</button>
+                <li class="tab01">
+                    <button class="is-active" data-section="#about" role="button">ABOUT ME</button>
                 </li>
                 <li class="tab02">
-                    <button data-state="#experience">EXPERIENCE</button>
+                    <button data-section="#experience" role="button">EXPERIENCE</button>
                 </li>
                 <li class="tab03">
-                    <button data-state="#skill">SKILL</button>
+                    <button data-section="#skill" role="button">SKILL</button>
                 </li>
             </ul>
             <div class="info-area">
@@ -56,13 +56,17 @@
                         <span class="btn"></span>
                     </div>
                     <div class="tab-cont">
-                        <div class="works-tab">
+                        <div class="works-tab now-active">
                             <div class="favicon_img"></div>
                             <h3>work1</h3>
                         </div>
                         <div class="works-tab">
                             <div class="favicon_img"></div>
                             <h3>work2</h3>
+                        </div>
+                        <div class="works-tab">
+                            <div class="favicon_img"></div>
+                            <h3>work3</h3>
                         </div>
                     </div>
                     <div class="add-btn">
@@ -101,8 +105,8 @@
                             <div class="workspace-show">
                                 <div class="work-main-img"></div>
                                 <div class="work-url-btn">
-                                    <a href="#">view site</a>
-                                    <a href="#">view site</a>
+                                    <a href="#" target="_blank" role="button" aria-label="새창열기">view site</a>
+                                    <a href="#" target="_blank" role="button" aria-label="새창열기">view site</a>
                                 </div>
                             </div>
                             <div class="workspace-info">
@@ -122,11 +126,11 @@
             </div>
         </article>
         <div class="event-btn-area">
-            <div class="reboot">
+            <div class="reload">
                 <div class="floder-img">
                     <img src="./img/icon/ico_floder.svg" alt="">
                 </div>
-                <p class="floder-name">reboot</p>
+                <p class="floder-name">reload</p>
             </div>
             <div class="dark-mode">
                 <div class="floder-img">

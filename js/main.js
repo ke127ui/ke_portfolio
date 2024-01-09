@@ -4,6 +4,7 @@ window.onload = function(){
   const body = document.querySelector('body');
   const reload = document.querySelector('.reload');
   const darkMode = document.querySelector('.dark-mode');
+  const modeName = darkMode.querySelector('.floder-name');
   const bookmark = document.querySelector('.ico-bookmark');
   const bookmarkIcon = document.querySelector('.ico-bookmark img');
 
@@ -34,8 +35,10 @@ window.onload = function(){
   darkMode.addEventListener('click', () => {
     if(body.classList.contains('darkM')){
       body.classList.remove('darkM');
+      modeName.innerHTML = 'dark-mode';
     }else{
       body.classList.add('darkM');
+      modeName.innerHTML = 'light-mode';
     }
   });
   reload.addEventListener('click', () => {

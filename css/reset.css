@@ -3,6 +3,7 @@
     padding: 0;
     font: inherit;
     color: inherit;
+    outline: none;
 }
 *,
 :after,
@@ -17,6 +18,7 @@
     line-height: 1.5;
     overflow-wrap: break-word;
     word-break: break-word;
+    text-wrap: balance;
     tab-size: 4;
 }
 body,

@@ -26,7 +26,6 @@ window.onload = function(){
     }else{
       infoMain.classList.remove('is-active');
     }
-    infoMain.classList.add('test');
     infoMain.setAttribute('data-state', targetSection);
     infoSection.forEach(s => s.classList.remove('is-active'));
     tabList.forEach(t => t.classList.remove('is-active'));

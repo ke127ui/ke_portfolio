@@ -1,18 +1,31 @@
 window.onload = function(){
 /* ============ start ============ */
-// ______변수 area______
-  const body = document.querySelector('body');
-  const reload = document.querySelector('.reload');
-  const darkMode = document.querySelector('.dark-mode');
-  const modeName = darkMode.closest('.btn-menu li');
-  const infoMenu = document.querySelectorAll('.btn-menu li.info-menu');
-  const bookmark = document.querySelector('.ico-bookmark');
-  const bookmarkIcon = document.querySelector('.ico-bookmark img');
+// 모바일 bar영역 제외 스크립트
+  const setScreenSize = e => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-  const workMain = document.querySelector('.my-works');
-  const infoMain = document.querySelector('.my-info');
-  const tabList = document.querySelectorAll('.info-tab li button');
-  const infoSection = document.querySelectorAll('.info-main section');
+  };
+  window.addEventListener('resize', () => setScreenSize());
+
+// ______변수 area______
+  const body = document.querySelector('body'),
+        reload = document.querySelector('.reload'),
+        darkMode = document.querySelector('.dark-mode'),
+        modeName = darkMode.closest('.btn-menu li'),
+        infoMenu = document.querySelectorAll('.btn-menu li.info-menu'),
+        bookmark = document.querySelector('.ico-bookmark'),
+        bookmarkIcon = document.querySelector('.ico-bookmark img');
+
+  const workMain = document.querySelector('.my-works'),
+        infoMain = document.querySelector('.my-info'),
+        tabList = document.querySelectorAll('.info-tab li button'),
+        infoSection = document.querySelectorAll('.info-main section');
+
+  const prevBtn = document.querySelector('.works-btn-area .btn-prev'),
+        nxetBtn = document.querySelector('.works-btn-area .btn-next'),
+        workPage = document.querySelectorAll('.cm-works-cont'),
+        workBtn = document.querySelectorAll('.works-tab');
 
 
 // ______함수 실행______
@@ -71,6 +84,40 @@ window.onload = function(){
     btn.addEventListener('click', menuClickHandel);
   });
 
+// skill json 불러오기
+
+// works json 불러오기
+
+// prev, next button
+  let nowPage = 0;
+  let lastPage = workBtn.length - 1;
+
+  for(let i = 0; i < workBtn.length; i++){
+    workBtn[i].addEventListener("click", function() {
+      workPage[nowPage].classList.remove('now-view');
+      workBtn[nowPage].classList.remove('now-view');
+      workPage[nowPage].classList.remove('appear');
+      workPage[nowPage = i].classList.add('now-view');
+      workBtn[nowPage = i].classList.add('now-view');
+      workPage[nowPage = i].classList.add('appear');
+    });
+  };
+
+  prevBtn.addEventListener('click', function() {
+    if(nowPage === 0){
+      workBtn[lastPage].click();
+    }else if(nowPage > 0){
+      workBtn[nowPage - 1].click();
+    }
+  });
+  nxetBtn.addEventListener('click', function(){
+    if(nowPage === lastPage){
+      workBtn[0].click();
+    }else if(nowPage < lastPage){
+      workBtn[nowPage + 1].click();
+    }
+  });
+
 // Easter Egg
   darkMode.addEventListener('click', () => {
     if(body.classList.contains('darkM')){
@@ -91,13 +138,5 @@ window.onload = function(){
       bookmarkIcon.src = "./img/icon/ico_star.svg"
     }
   });
-
-// 모바일 bar영역 제외 스크립트
-  const setScreenSize = e => {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-  };
-  window.addEventListener('resize', () => setScreenSize());
 /* ============ end ============ */
 };

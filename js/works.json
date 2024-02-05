@@ -1,17 +1,146 @@
-{
-  "work":[
-    {
-      "no": "1",
-      "title": "",
-      "faviconImg": "",
-      "img": "",
-      "eventEnd":"",
-      "siteUrl": "",
-      "siteUrl1": "",
-      "siteUrl2": "",
-      "siteUrl3": "",
-      "siteUrl4": "",
-      "mainTxt": ""
-    }
-  ]
-}
+[
+  {
+    "title": "포트폴리오",
+    "faviconImg": "../img/work_img/favicon_img08.png",
+    "img": "../img/work_img/works_img08.png",
+    "site": [
+      "https://hiro961227.github.io/ke_portfolio/"
+    ],
+    "subTxt":"html5, scss, javascritp",
+    "mainTxt": "별도 페이지 넘김 없이 한 페이지에서 사용할 수 있는 이벤트를 전부 넣어볼 수 있도록 해보았으며, 스스로 해결하기 어려운 부분은 구글 검색을 통하여 알게된 지식들을 최대한 수기로 작성하여 제가 알아보기 용이하도록 작업해보았습니다.",
+    "endTxt": [
+      "- fetch를 사용하여 josn파일을 불러와 skill, wokrs space 작업",
+      "- 이벤트 트리거 요소를 따로 두어 한 가지 요소를 제어할 수 있도록 작업(works area를 제어하는 tab, btn event)"
+    ]
+  },
+  {
+    "title": "Golden Disc Awards 클론",
+    "faviconImg": "../img/work_img/favicon_img09.png",
+    "img": "../img/work_img/works_img09.png",
+    "site": [
+      "https://hiro961227.github.io/gda_clone/",
+      "https://hiro961227.github.io/gda_clone/about/",
+      "https://hiro961227.github.io/gda_clone/nominees/",
+      "https://hiro961227.github.io/gda_clone/history/",
+      "https://hiro961227.github.io/gda_clone/gdnnow/"
+    ],
+    "subTxt":"react, nextJS, scss",
+    "mainTxt": "recat를 공부하면서 시작한 clone 프로젝트입니다. \n디자인부터 시작하여 구축, build까지 인터넷 강의와 google 서치 등을 통하여 hooks을 사용해보고 컴포넌트를 분류하여 작업해보는 등 새로운 시도와 경험을 할 수 있는 프로젝트였습니다.",
+    "endTxt": [
+      "- 클론 후 figma를 이용한 디자인 작업",
+      "- json 작성 후 map을 이용하여 자료 뿌리기 작업",
+      "- bulid후 배포 작업 경험"
+    ]
+  },
+  {
+    "title": "라이나생명 프로젝트",
+    "faviconImg": "../img/work_img/favicon_img10.png",
+    "img": "../img/work_img/works_img10.png",
+    "site": [
+      "https://www.lina.co.kr/product/easy",
+      "https://www.lina.co.kr/service/diagnosis/guide",
+      "https://www.lina.co.kr/customer/required"
+    ],
+    "subTxt":"vue2",
+    "mainTxt": "",
+    "endTxt": [
+      "- ",
+      "- "
+    ]
+  },
+  {
+    "title": "포트폴리오2",
+    "faviconImg": "../img/work_img/favicon_img07.png",
+    "img": "../img/work_img/works_img07.png",
+    "site": [
+      "https://hiro961227.github.io/kaeun_pf/"
+    ],
+    "subTxt":"html5, css, javascritp, jQuery",
+    "mainTxt": "",
+    "endTxt": [
+      "- ",
+      "- "
+    ]
+  },
+  {
+    "title": "suntory Liqueur&Cocktail 페이지 제작",
+    "faviconImg": "../img/work_img/favicon_img06.png",
+    "img": "../img/work_img/works_img06.png",
+    "site": [
+      "https://www.suntory.co.jp/wnb/index.html",
+      "https://www.suntory.co.jp/wnb/guide/index.html"
+    ],
+    "subTxt":"html5, css, jQuery",
+    "mainTxt": "일본 기업 Suntory 홈페이지의 Liqueur&Cocktail 이벤트 페이지를 제작하였습니다.\n디자인 변경 및 요구사항이 픽스되지 않아 작업하며 수정이 자주 들어왔던 프로젝트였습니다. pc와 sp의 백그라운드 변화로 인해 반응형에 조금 더 신경 쓸 수 있었던 프로젝트였습니다.","endTxt": [
+      "- Adobe XD를 이용한 디자인 파일 작업물 추출 및 적용"
+    ]
+  },
+  {
+    "title": "Suntory hall 2022페이지 제작",
+    "faviconImg": "../img/work_img/favicon_img05.png",
+    "img": "../img/work_img/works_img05.png",
+    "site": [
+      "https://www.suntory.co.jp/suntoryhall/feature/chamber2022/index.html",
+      "https://www.suntory.co.jp/suntoryhall/feature/chamber2022/profile/index.html",
+      "https://www.suntory.co.jp/suntoryhall/feature/chamber2022/topics/index.html"
+    ],
+    "subTxt":"html5, css, jQuery",
+    "mainTxt": "일본 기업 Suntory 홈페이지의 Suntory hall 이벤트 페이지의 2022버전을 제작하였습니다.\n이미지가 많은 페이지였던만큼 jpg의 용량도 최소한으로 조정하였으며 webp파일을 이용하여 로딩에 조금 더 가속을 붙였습니다. 텍스트로 작업 가능한 부분은 전부 순수 html,css를 이용하여 작성되었습니다.",
+    "endTxt": [
+      "- 백그라운드 디자인 파츠가 분리되어 사용되는 경우가 많았던 페이지였던만큼 pc버전과 sp버전의 백그라운드 코드 설정을 분리해 작업하는 등 리스펀시브 반응이 무너짐 없도록 최대한 신경써 작업했던 프로젝트였습니다."
+    ]
+  },
+  {
+    "title": "Suntory 중국어 페이지 제작",
+    "faviconImg": "../img/work_img/favicon_img04.png",
+    "img": "../img/work_img/works_img04.png",
+    "site": [
+      "https://www.suntory.cn/cn/what_we_do/our_sustainability/water.html",
+      "https://www.suntory.cn/cn/what_we_do/our_sustainability/low_carbon.html",
+      "https://www.suntory.cn/cn/what_we_do/our_sustainability/pet.html",
+      "https://www.suntory.cn/cn/what_we_do/our_sustainability/policy.html"
+    ],
+    "subTxt":"html5, css, jQuery",
+    "mainTxt": "일본 기업 Suntory 홈페이지의 중국어 페이지를 제작하였습니다. \n제공된 파일과 디자인을 이용하여 common에리어의 수정 및 본문 페이지 제작을 하였습니다.",
+    "endTxt": [
+      "- 페이지 내에서 자주 사용되는 스타일에 공통 class를 부여하여 작업. 이미지lazy 태그와 조금 더 빠르게 페이지를 로딩하기 위해 webp파일로 변환 및 반영하였습니다."
+    ]
+  },
+  {
+    "title": "Suntory hall 이벤트 페이지 제작",
+    "faviconImg": "../img/work_img/favicon_img03.png",
+    "img": "../img/work_img/works_img03.png",
+    "site": [
+      "https://www.suntory.co.jp/suntoryhall/feature/bso2022/index.html"
+    ],
+    "subTxt":"html5, css, jQuery",
+    "mainTxt": "일본 기업 Suntory 홈페이지의 Suntory hall 오케스트라 극단 이벤트 페이지를 제작하였습니다. \n앵커이동 js가 주를 이루었으며, onclick이벤트 설정을 위해 img태그에 width/height값이 지정되어있어 반응형 제작에 조금 더 신경 쓸 수 있는 프로젝트였습니다. webp파일을 이용하여 좀 더 빠른 로딩을 요구하였으며, 이미지 사용 최소화를 위해 텍스트로 작성 가능한 부분은 전부 html/css를 이용하여 작성하였습니다."
+  },
+  {
+    "title": "d바라이 이벤트 페이지 제작",
+    "faviconImg": "../img/work_img/favicon_img02.png",
+    "img": "../img/work_img/works_img02.png",
+    "site": [
+      "https://nttdocomo-ssw.com/keitai_payment/campaign/dpay_point_No12/2201/cpn_200p.html",
+      "https://service.smt.docomo.ne.jp/keitai_payment/campaign/dpay_point_No12/2201/cpn_200p.html?startdate=20240205&enddate=20240216"
+    ],
+    "subTxt":"html5, css, jQuery",
+    "mainTxt": "일본 도코모 기업의 d바라이 이벤트 페이지를 제작하였습니다.\n컨펌 완료된 디자인을 기반으로, 보다 빠른 로딩을 위하여 포토샵을 이용해 웹용으로 저장을 통해 이미지의 용량을 최소한으로 하였으며 디자인에 최대한 맞추어 작성하였습니다.\n 기존에 사용하는 공통 아코디언과 추종 버튼 js태그 이외, 파라미터 내의 자료를 받아와 화면에 송출하는 작업을 해 볼 수 있는 페이지였습니다.",
+    "endTxt": [
+      "- url 파라미터를 받아와 제대로 입력 되어있는지 판정 후 화면에 송출하도록 태그를 작성하였습니다.\nstartdate&enddate 데이터 내에 날짜 8자리를 기입하면 적용 기간이 나오도록 설정하였으며, 날짜가 기입되지 않은 경우 30일 내 적용된다는 코멘트를 기입하여 파라미터 정보를 활용한 코드를 작성하였습니다.(두 번째 view site 버튼을 클릭하면 파라미터 값을 받아온 이벤트 페이지로 넘어갑니다.)"
+    ]
+  },
+  {
+    "title": "d point club 이벤트 페이지 제작",
+    "faviconImg": "../img/work_img/favicon_img01.png",
+    "img": "../img/work_img/works_img01.png",
+    "site": [
+      "https://dpoint.docomo.ne.jp/cp_3/yoshimoto_densetsu/index.html"
+    ],
+    "subTxt":"html5, css, jQuery",
+    "mainTxt": "일본 내 극단과 d point 콜라보로 진행되었던 이벤트 페이지입니다. \n제작된 디자인에 맞추어 작업을 하였으며, 앵커이동 및 출연진 이미지 팝업과 slick.js라이브러리를 이용한 슬라이더, 탭 이동 등 여러 js 코드를 응용할 수 있던 페이지였습니다.",    "endTxt": [
+      "- XD를 사용하여 디자인에서 이미지를 따온 뒤 파츠에 맞춰 작업",
+      "- 해당 이미지를 클릭하면 스크롤을 막으며 팝업이 뜨는 코드를 작성하였습니다. 닫기 버튼 및 이미지 영역 외를 클릭하면 닫히도록 설정."
+    ]
+  }
+]

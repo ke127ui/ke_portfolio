@@ -23,9 +23,10 @@ window.onload = function(){
         infoSection = document.querySelectorAll('.info-main section');
 
   const prevBtn = document.querySelector('.works-btn-area .btn-prev'),
-        nxetBtn = document.querySelector('.works-btn-area .btn-next'),
-        workPage = document.querySelectorAll('.cm-works-cont'),
-        workBtn = document.querySelectorAll('.works-tab');
+        nxetBtn = document.querySelector('.works-btn-area .btn-next');
+
+  const TabContListArea = document.querySelector('.tab-cont'),
+        WorkContArea = document.querySelector('.works-main');
 
 
 // ______함수 실행______
@@ -87,36 +88,108 @@ window.onload = function(){
 // skill json 불러오기
 
 // works json 불러오기
+  fetch("../js/works.json")
+  .then((res) => {
+    return res.json();
+  })
+  .then((obj) => {
+    WorkList(obj);
+  })
 
-// prev, next button
-  let nowPage = 0;
-  let lastPage = workBtn.length - 1;
+  function WorkList(obj){
+    let tabCont = '',
+        workCont = '';
 
-  for(let i = 0; i < workBtn.length; i++){
-    workBtn[i].addEventListener("click", function() {
-      workPage[nowPage].classList.remove('now-view');
-      workBtn[nowPage].classList.remove('now-view');
-      workPage[nowPage].classList.remove('appear');
-      workPage[nowPage = i].classList.add('now-view');
-      workBtn[nowPage = i].classList.add('now-view');
-      workPage[nowPage = i].classList.add('appear');
-    });
-  };
+    for(let l = 0; l < obj.length; l++){
+      const title = obj[l].title;
+      const faviconImg = obj[l].faviconImg;
+      const img = obj[l].img;
+      const site = obj[l].site;
+      const subTxt = obj[l].subTxt;
+      const mainTxt = obj[l].mainTxt;
+      const endTxt = obj[l].endTxt;
 
-  prevBtn.addEventListener('click', function() {
-    if(nowPage === 0){
-      workBtn[lastPage].click();
-    }else if(nowPage > 0){
-      workBtn[nowPage - 1].click();
+      //tabArea
+      tabCont += "<div class='works-tab'>"
+      tabCont += "<div class='favicon_img' style='background-image: url("+faviconImg+");'></div>"
+      tabCont += "<h3>"+title+"</h3>"
+      tabCont += "</div>";
+
+      TabContListArea.innerHTML = tabCont;
+      TabContListArea.firstElementChild.classList.add('now-view');
+
+      //workSpace
+      workCont += "<div class='cm-works-cont'>"
+      workCont += "<h3>"+title+"</h3>"
+      workCont += "<div class='workspace'>"
+      workCont += "<div class='workspace-show'>"
+      workCont += "<div class='work-main-img' style='background-image: url("+img+");'></div>"
+      workCont += "<div class='work-url-btn'>"
+      for(let s = 0; s < site.length; s++){
+        workCont += "<a href='"+site[s]+"' target='_blank' role='button' aria-label='새창열기'>view site</a>"
+      }
+      workCont += "</div></div>"
+      workCont += "<div class='workspace-info'><p class='main-txt'>"+mainTxt+"</p>"
+      workCont += "<p class='sub-txt'>사용 언어: "+subTxt+"</p>"
+      if(endTxt){
+        workCont += "<div class='point-txt'><p>작업 포인트</p><ul>"
+        for(let e = 0; e < endTxt.length; e++){
+          workCont += "<li><p>"+endTxt[e]+"</p></li>"
+        }
+        workCont += "</ul></div>";
+      }
+      workCont += "</div></div></div>";
+
+      WorkContArea.innerHTML = workCont;
+      WorkContArea.firstElementChild.classList.add('appear');
+      WorkContArea.firstElementChild.classList.add('now-view');
+
+      // prev, next button
+      const workPage = document.querySelectorAll('.cm-works-cont'),
+            workBtn = document.querySelectorAll('.works-tab');
+      const wheelArea = document.querySelector('.tab-cont');
+      let nowPage = 0;
+      let lastPage = workBtn.length - 1;
+
+      for(let i = 0; i < workBtn.length; i++){
+          workBtn[i].addEventListener("click", function() {
+          workPage[nowPage].classList.remove('now-view');
+          workBtn[nowPage].classList.remove('now-view');
+          workPage[nowPage].classList.remove('appear');
+          workPage[nowPage = i].classList.add('now-view');
+          workBtn[nowPage = i].classList.add('now-view');
+          workPage[nowPage = i].classList.add('appear');
+        });
+      };
+
+      prevBtn.addEventListener('click', function() {
+        if(nowPage === 0){
+          workBtn[lastPage].click();
+        }else if(nowPage > 0){
+          workBtn[nowPage - 1].click();
+        }
+      });
+      nxetBtn.addEventListener('click', function(){
+        if(nowPage === lastPage){
+          workBtn[0].click();
+        }else if(nowPage < lastPage){
+          workBtn[nowPage + 1].click();
+        }
+      });
+
+      //mouseWheel event
+      wheelArea.addEventListener('wheel', function(e) {
+        const race = 1;
+
+        if (e.deltaY > 0) // Scroll right
+          wheelArea.scrollLeft += race;
+        else // Scroll left
+          wheelArea.scrollLeft -= race;
+        e.preventDefault();
+      });
     }
-  });
-  nxetBtn.addEventListener('click', function(){
-    if(nowPage === lastPage){
-      workBtn[0].click();
-    }else if(nowPage < lastPage){
-      workBtn[nowPage + 1].click();
-    }
-  });
+  }
+
 
 // Easter Egg
   darkMode.addEventListener('click', () => {

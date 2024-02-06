@@ -15,8 +15,8 @@
   },
   {
     "title": "Golden Disc Awards 클론",
-    "faviconImg": "../img/work_img/favicon_img09.png",
-    "img": "../img/work_img/works_img09.png",
+    "faviconImg": "./img/work_img/favicon_img09.png",
+    "img": "./img/work_img/works_img09.png",
     "site": [
       "https://hiro961227.github.io/gda_clone/",
       "https://hiro961227.github.io/gda_clone/about/",
@@ -34,8 +34,8 @@
   },
   {
     "title": "라이나생명 프로젝트",
-    "faviconImg": "../img/work_img/favicon_img10.png",
-    "img": "../img/work_img/works_img10.png",
+    "faviconImg": "./img/work_img/favicon_img10.png",
+    "img": "./img/work_img/works_img10.png",
     "site": [
       "https://www.lina.co.kr/product/easy",
       "https://www.lina.co.kr/service/diagnosis/guide",
@@ -44,41 +44,42 @@
     "subTxt":"vue2",
     "mainTxt": "2달간 헬프로 투입된 프로젝트였습니다. \n처음 경험해보는 대인원 프로젝트에 fork를 사용하여 브랜치를 따 작업하는 것, 협업이 돌아가는 방식 등을 배울 수 있었습니다. 중간에 투입되어 수정된 디자인 사안에 맞추어 작업하는 업무를 맡았으며, 접근성을 위하여 wai-aria을 도입해 태그별 적절한 role를 적용하는 작업 등을 경험할 수 있었습니다.",
     "endTxt": [
-      "- ",
-      "- "
+      "- vue2 - Element UI를 응용한 커스텀 checkbox 작업",
+      "- 분리된 component를 확인하여 수정 작업 경험"
     ]
   },
   {
     "title": "포트폴리오2",
-    "faviconImg": "../img/work_img/favicon_img07.png",
-    "img": "../img/work_img/works_img07.png",
+    "faviconImg": "./img/work_img/favicon_img07.png",
+    "img": "./img/work_img/works_img07.png",
     "site": [
       "https://hiro961227.github.io/kaeun_pf/"
     ],
     "subTxt":"html5, css, javascritp, jQuery",
-    "mainTxt": "",
+    "mainTxt": "jQuery를 최대한 사용하지 않으며 작업하도록 노력한 포트폴리오입니다.\n스크롤바를 없앤 대신 상단부에 scrollTop만큼의 값을 계산하여 bar형태로 위치의 현재값을 보여주거나, animation: steps속성을 활용한 움직이는 그림 효과, html5 내의 progress 태그를 활용한 스킬트리 작업 등 평소 흥미 있었던 태그들을 녹여낸 포토폴리오입니다.",
     "endTxt": [
-      "- ",
-      "- "
+      "- ajax를 활용한 json 호출",
+      "- deltaY값을 활용한 mouseWheel 이벤트"
     ]
   },
   {
     "title": "suntory Liqueur&Cocktail 페이지 제작",
-    "faviconImg": "../img/work_img/favicon_img06.png",
-    "img": "../img/work_img/works_img06.png",
+    "faviconImg": "./img/work_img/favicon_img06.png",
+    "img": "./img/work_img/works_img06.png",
     "site": [
       "https://www.suntory.co.jp/wnb/index.html",
       "https://www.suntory.co.jp/wnb/guide/index.html"
     ],
     "subTxt":"html5, css, jQuery",
-    "mainTxt": "일본 기업 Suntory 홈페이지의 Liqueur&Cocktail 이벤트 페이지를 제작하였습니다.\n디자인 변경 및 요구사항이 픽스되지 않아 작업하며 수정이 자주 들어왔던 프로젝트였습니다. pc와 sp의 백그라운드 변화로 인해 반응형에 조금 더 신경 쓸 수 있었던 프로젝트였습니다.","endTxt": [
+    "mainTxt": "일본 기업 Suntory 홈페이지의 Liqueur&Cocktail 이벤트 페이지를 제작하였습니다.\n디자인 변경 및 요구사항이 픽스되지 않아 작업하며 수정이 자주 들어왔던 프로젝트였습니다. pc와 sp의 백그라운드 변화로 인해 반응형에 조금 더 신경 쓸 수 있었던 프로젝트였습니다.",
+    "endTxt": [
       "- Adobe XD를 이용한 디자인 파일 작업물 추출 및 적용"
     ]
   },
   {
     "title": "Suntory hall 2022페이지 제작",
-    "faviconImg": "../img/work_img/favicon_img05.png",
-    "img": "../img/work_img/works_img05.png",
+    "faviconImg": "./img/work_img/favicon_img05.png",
+    "img": "./img/work_img/works_img05.png",
     "site": [
       "https://www.suntory.co.jp/suntoryhall/feature/chamber2022/index.html",
       "https://www.suntory.co.jp/suntoryhall/feature/chamber2022/profile/index.html",
@@ -92,8 +93,8 @@
   },
   {
     "title": "Suntory 중국어 페이지 제작",
-    "faviconImg": "../img/work_img/favicon_img04.png",
-    "img": "../img/work_img/works_img04.png",
+    "faviconImg": "./img/work_img/favicon_img04.png",
+    "img": "./img/work_img/works_img04.png",
     "site": [
       "https://www.suntory.cn/cn/what_we_do/our_sustainability/water.html",
       "https://www.suntory.cn/cn/what_we_do/our_sustainability/low_carbon.html",
@@ -108,8 +109,8 @@
   },
   {
     "title": "Suntory hall 이벤트 페이지 제작",
-    "faviconImg": "../img/work_img/favicon_img03.png",
-    "img": "../img/work_img/works_img03.png",
+    "faviconImg": "./img/work_img/favicon_img03.png",
+    "img": "./img/work_img/works_img03.png",
     "site": [
       "https://www.suntory.co.jp/suntoryhall/feature/bso2022/index.html"
     ],
@@ -118,8 +119,8 @@
   },
   {
     "title": "d바라이 이벤트 페이지 제작",
-    "faviconImg": "../img/work_img/favicon_img02.png",
-    "img": "../img/work_img/works_img02.png",
+    "faviconImg": "./img/work_img/favicon_img02.png",
+    "img": "./img/work_img/works_img02.png",
     "site": [
       "https://nttdocomo-ssw.com/keitai_payment/campaign/dpay_point_No12/2201/cpn_200p.html",
       "https://service.smt.docomo.ne.jp/keitai_payment/campaign/dpay_point_No12/2201/cpn_200p.html?startdate=20240205&enddate=20240216"
@@ -132,8 +133,8 @@
   },
   {
     "title": "d point club 이벤트 페이지 제작",
-    "faviconImg": "../img/work_img/favicon_img01.png",
-    "img": "../img/work_img/works_img01.png",
+    "faviconImg": "./img/work_img/favicon_img01.png",
+    "img": "./img/work_img/works_img01.png",
     "site": [
       "https://dpoint.docomo.ne.jp/cp_3/yoshimoto_densetsu/index.html"
     ],

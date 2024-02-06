@@ -88,7 +88,7 @@ window.onload = function(){
 // skill json 불러오기
 
 // works json 불러오기
-  fetch("../js/works.json")
+  fetch("js/works.json")
   .then((res) => {
     return res.json();
   })

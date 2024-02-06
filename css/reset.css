@@ -18,7 +18,7 @@
     line-height: 1.5;
     overflow-wrap: break-word;
     word-break: break-word;
-    text-wrap: balance;
+    /* text-wrap: balance; */
     tab-size: 4;
 }
 body,

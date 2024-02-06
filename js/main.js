@@ -28,6 +28,8 @@ window.onload = function(){
   const TabContListArea = document.querySelector('.tab-cont'),
         WorkContArea = document.querySelector('.works-main');
 
+  const skillContArea = document.querySelector('.skill-list');
+
 
 // ______함수 실행______
 
@@ -86,6 +88,39 @@ window.onload = function(){
   });
 
 // skill json 불러오기
+  fetch("js/skill.json")
+  .then((res) => {
+    return res.json();
+  })
+  .then((obj) => {
+    SkillList(obj);
+  })
+
+  function SkillList(obj){
+    let skillCont = '';
+
+    for(let s = 0; s < obj.length; s++){
+      const title = obj[s].title;
+      const icon = obj[s].icon;
+      const desc = obj[s].desc;
+      const percent = obj[s].percent;
+      const color = obj[s].color;
+
+      skillCont += "<li>"
+      skillCont += "<div class='tool-area'>"
+      skillCont += "<div class='circle-area'"
+      skillCont += " style='background: conic-gradient(#"+color+" 0%, #"+color+" "+percent+"%, transparent "+percent+"%, transparent 100%)'>"
+      skillCont += "<span class='icon-area'><img src='"+icon+"' alt=''></span>"
+      skillCont += "</div></div>"
+      skillCont += "<div class='tool-txt'>"
+      skillCont += "<h4>"+title+"</h4>"
+      skillCont += "<p>"+desc+"</p>"
+      skillCont += "</div>"
+      skillCont += "</li>"
+
+      skillContArea.innerHTML = skillCont;
+    }
+  }
 
 // works json 불러오기
   fetch("js/works.json")

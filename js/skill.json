@@ -1,0 +1,51 @@
+[
+  {
+    "title": "html5",
+    "icon": "./img/icon/ico_html.svg",
+    "desc": "접근성에 맞추어 코드 작성이 가능합니다.",
+    "percent": 90,
+    "color": "FF6D00"
+  },
+  {
+    "title": "css3",
+    "icon": "./img/icon/ico_css.svg",
+    "desc": "선택자의 구조를 이해하고 활용할 수 있습니다.",
+    "percent": 85,
+    "color": "039BE5"
+  },
+  {
+    "title": "sass",
+    "icon": "./img/icon/ico_sass.svg",
+    "desc": "변수, mixin를 이용하고 활용할 수 있습니다.",
+    "percent": 80,
+    "color": "F06292"
+  },
+  {
+    "title": "javascript",
+    "icon": "./img/icon/ico_js.svg",
+    "desc": "데이터 불러오기 및 동적 페이지 화면을 구현할 수 있습니다.",
+    "percent": 60,
+    "color": "FFD600"
+  },
+  {
+    "title": "Jquery",
+    "icon": "./img/icon/ico_jquery.svg",
+    "desc": "데이터 불러오기 및 동적 페이지 화면을 구현할 수 있습니다.",
+    "percent": 65,
+    "color": "0868AC"
+  },
+  {
+    "title": "vue",
+    "icon": "./img/icon/ico_vue.svg",
+    "desc": "component구조를 이해하고 활용할 수 있습니다.",
+    "percent": 35,
+    "color": "455A64"
+  },
+  {
+    "title": "react",
+    "icon": "./img/icon/ico_react.svg",
+    "desc": "Hooks및 component구조를 이해하고 있습니다.",
+    "percent": 20,
+    "color": "80DEEA"
+  }
+]

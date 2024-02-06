@@ -1,8 +1,8 @@
 [
   {
     "title": "포트폴리오",
-    "faviconImg": "../img/work_img/favicon_img08.png",
-    "img": "../img/work_img/works_img08.png",
+    "faviconImg": "./img/work_img/favicon_img08.png",
+    "img": "./img/work_img/works_img08.png",
     "site": [
       "https://hiro961227.github.io/ke_portfolio/"
     ],
@@ -42,7 +42,7 @@
       "https://www.lina.co.kr/customer/required"
     ],
     "subTxt":"vue2",
-    "mainTxt": "",
+    "mainTxt": "2달간 헬프로 투입된 프로젝트였습니다. \n처음 경험해보는 대인원 프로젝트에 fork를 사용하여 브랜치를 따 작업하는 것, 협업이 돌아가는 방식 등을 배울 수 있었습니다. 중간에 투입되어 수정된 디자인 사안에 맞추어 작업하는 업무를 맡았으며, 접근성을 위하여 wai-aria을 도입해 태그별 적절한 role를 적용하는 작업 등을 경험할 수 있었습니다.",
     "endTxt": [
       "- ",
       "- "

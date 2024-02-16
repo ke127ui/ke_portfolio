@@ -157,9 +157,9 @@ window.onload = function(){
       workCont += "<div class='cm-works-cont'>"
       workCont += "<h3>"+title+"</h3>"
       workCont += "<div class='workspace'>"
-      workCont += "<div class='workspace-show'>"
+      workCont += "<div class='workspace-show'><div class='bkwrap'>"
       workCont += "<div class='work-main-img' style='background-image: url("+img+");'></div>"
-      workCont += "<div class='work-url-btn'>"
+      workCont += "</div><div class='work-url-btn'>"
       for(let s = 0; s < site.length; s++){
         workCont += "<a href='"+site[s]+"' target='_blank' role='button' aria-label='새창열기'>view site</a>"
       }

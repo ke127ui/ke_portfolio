@@ -2,7 +2,7 @@
   {
     "title": "포트폴리오",
     "faviconImg": "./img/work_img/favicon_img08.png",
-    "img": "./img/work_img/works_img08.png",
+    "img": "./img/work_img/works_img08.jpg",
     "site": [
       "https://hiro961227.github.io/ke_portfolio/"
     ],
@@ -16,7 +16,7 @@
   {
     "title": "Golden Disc Awards 클론",
     "faviconImg": "./img/work_img/favicon_img09.png",
-    "img": "./img/work_img/works_img09.png",
+    "img": "./img/work_img/works_img09.jpg",
     "site": [
       "https://hiro961227.github.io/gda_clone/",
       "https://hiro961227.github.io/gda_clone/about/",
@@ -35,7 +35,7 @@
   {
     "title": "라이나생명 프로젝트",
     "faviconImg": "./img/work_img/favicon_img10.png",
-    "img": "./img/work_img/works_img10.png",
+    "img": "./img/work_img/works_img10.jpg",
     "site": [
       "https://www.lina.co.kr/product/easy",
       "https://www.lina.co.kr/service/diagnosis/guide",
@@ -51,7 +51,7 @@
   {
     "title": "포트폴리오2",
     "faviconImg": "./img/work_img/favicon_img07.png",
-    "img": "./img/work_img/works_img07.png",
+    "img": "./img/work_img/works_img07.jpg",
     "site": [
       "https://hiro961227.github.io/kaeun_pf/"
     ],
@@ -65,7 +65,7 @@
   {
     "title": "suntory Liqueur&Cocktail 페이지 제작",
     "faviconImg": "./img/work_img/favicon_img06.png",
-    "img": "./img/work_img/works_img06.png",
+    "img": "./img/work_img/works_img06.jpg",
     "site": [
       "https://www.suntory.co.jp/wnb/index.html",
       "https://www.suntory.co.jp/wnb/guide/index.html"
@@ -79,7 +79,7 @@
   {
     "title": "Suntory hall 2022페이지 제작",
     "faviconImg": "./img/work_img/favicon_img05.png",
-    "img": "./img/work_img/works_img05.png",
+    "img": "./img/work_img/works_img05.jpg",
     "site": [
       "https://www.suntory.co.jp/suntoryhall/feature/chamber2022/index.html",
       "https://www.suntory.co.jp/suntoryhall/feature/chamber2022/profile/index.html",
@@ -94,7 +94,7 @@
   {
     "title": "Suntory 중국어 페이지 제작",
     "faviconImg": "./img/work_img/favicon_img04.png",
-    "img": "./img/work_img/works_img04.png",
+    "img": "./img/work_img/works_img04.jpg",
     "site": [
       "https://www.suntory.cn/cn/what_we_do/our_sustainability/water.html",
       "https://www.suntory.cn/cn/what_we_do/our_sustainability/low_carbon.html",
@@ -110,7 +110,7 @@
   {
     "title": "Suntory hall 이벤트 페이지 제작",
     "faviconImg": "./img/work_img/favicon_img03.png",
-    "img": "./img/work_img/works_img03.png",
+    "img": "./img/work_img/works_img03.jpg",
     "site": [
       "https://www.suntory.co.jp/suntoryhall/feature/bso2022/index.html"
     ],
@@ -120,7 +120,7 @@
   {
     "title": "d바라이 이벤트 페이지 제작",
     "faviconImg": "./img/work_img/favicon_img02.png",
-    "img": "./img/work_img/works_img02.png",
+    "img": "./img/work_img/works_img02.jpg",
     "site": [
       "https://nttdocomo-ssw.com/keitai_payment/campaign/dpay_point_No12/2201/cpn_200p.html",
       "https://service.smt.docomo.ne.jp/keitai_payment/campaign/dpay_point_No12/2201/cpn_200p.html?startdate=20240205&enddate=20240216"
@@ -134,7 +134,7 @@
   {
     "title": "d point club 이벤트 페이지 제작",
     "faviconImg": "./img/work_img/favicon_img01.png",
-    "img": "./img/work_img/works_img01.png",
+    "img": "./img/work_img/works_img01.jpg",
     "site": [
       "https://dpoint.docomo.ne.jp/cp_3/yoshimoto_densetsu/index.html"
     ],

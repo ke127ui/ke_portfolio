@@ -76,16 +76,20 @@ window.onload = function(){
 
     if(infoMain.classList.contains('now-open') && tab === '#'+nowMenu){
       infoMain.classList.remove('now-open');
-      workMain.classList.add('now-full');
-      // setTimeout(() => {
-      //   workMain.classList.add('now-full');
-      // }, 500)
+      // workMain.classList.add('now-full');
+      document.querySelector('.info-bg').classList.remove('openbg');
+      setTimeout(() => {
+        workMain.classList.add('now-full');
+        infoMain.style.visibility = "hidden";
+      }, 500)
     }else{
       workMain.classList.remove('now-full');
-      infoMain.classList.add('now-open');
-      // setTimeout(() => {
-      //   infoMain.classList.add('now-open');
-      // }, 500)
+      // infoMain.classList.add('now-open');
+      document.querySelector('.info-bg').classList.add('openbg');
+      setTimeout(() => {
+        infoMain.classList.add('now-open');
+        infoMain.style.visibility = "visible";
+      }, 500)
     }
 
   };

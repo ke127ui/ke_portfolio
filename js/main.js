@@ -77,9 +77,15 @@ window.onload = function(){
     if(infoMain.classList.contains('now-open') && tab === '#'+nowMenu){
       infoMain.classList.remove('now-open');
       workMain.classList.add('now-full');
+      // setTimeout(() => {
+      //   workMain.classList.add('now-full');
+      // }, 500)
     }else{
+      workMain.classList.remove('now-full');
       infoMain.classList.add('now-open');
-          workMain.classList.remove('now-full');
+      // setTimeout(() => {
+      //   infoMain.classList.add('now-open');
+      // }, 500)
     }
 
   };
@@ -214,7 +220,7 @@ window.onload = function(){
 
       //mouseWheel event
       wheelArea.addEventListener('wheel', function(e) {
-        const race = 1;
+        const race = 10;
 
         if (e.deltaY > 0) // Scroll right
           wheelArea.scrollLeft += race;

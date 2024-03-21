@@ -32,7 +32,6 @@ window.onload = function(){
 
 
 // ______함수 실행______
-
 // 소개, 이력, 스킬 카드
   const tabClickHandle = e => {
     const targetSection  = e.target.getAttribute('data-section');
@@ -234,7 +233,6 @@ window.onload = function(){
       });
     }
   }
-
 
 // Easter Egg
   darkMode.addEventListener('click', () => {

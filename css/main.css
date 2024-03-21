@@ -1254,52 +1254,61 @@ main .my-works .web-section .works-btn-area button:hover, main .my-works .web-se
 .event-btn-area .btn-menu li div .folder-img {
   transition: 0.3s ease-in-out;
 }
-.event-btn-area .btn-menu li div:not(:last-child) {
-  margin-bottom: 16px;
+.event-btn-area .btn-menu li div .folder-text {
+  text-align: center;
+}
+@media (hover: hover) and (pointer: fine) {
+  .event-btn-area .btn-menu li div .folder-text {
+    display: inline-block;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 4px 8px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+    border-radius: 12px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #333 !important;
+  }
+}
+@media (max-width: 767px) {
+  .event-btn-area .btn-menu li div .folder-text {
+    display: block;
+    width: 160px;
+    position: static;
+    padding: 4px 0 0;
+    opacity: 1;
+    font-size: 1rem;
+    transform: translate(0, 0);
+    background-color: transparent;
+  }
+}
+.event-btn-area .btn-menu li div:hover .folder-text {
+  opacity: 1;
+  transform: translate(-50%, -30px);
+}
+@media (hover: none) and (pointer: coarse) {
+  .event-btn-area .btn-menu li div:hover .folder-text {
+    transform: translate(0, 0);
+  }
+}
+@media (max-width: 767px) {
+  .event-btn-area .btn-menu li div:hover .folder-text {
+    transform: translate(0, 0);
+  }
 }
 @media (hover: none) and (pointer: coarse) {
   .event-btn-area .btn-menu li div {
     width: 40px;
   }
 }
-.event-btn-area .btn-menu li::after {
-  content: attr(data-state);
-  display: inline-block;
-  width: -moz-max-content;
-  width: max-content;
-  padding: 4px 8px;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translate(-50%, 0);
-  border-radius: 12px;
-  font-size: 1.2rem;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
-  opacity: 0;
-  background-color: rgba(255, 255, 255, 0.75);
-  color: #333 !important;
-}
-@media (max-width: 767px) {
-  .event-btn-area .btn-menu li::after {
-    display: none;
-  }
-}
-.event-btn-area .btn-menu li:hover div {
-  transform: scale(1.12) translateY(0);
-}
-@media (hover: none) and (pointer: coarse) {
-  .event-btn-area .btn-menu li:hover div {
-    transform: unset;
-  }
-}
-.event-btn-area .btn-menu li:hover::after {
-  opacity: 1;
-  transform: translate(-50%, -40px);
-}
 @media (hover: none) and (pointer: coarse) {
   .event-btn-area {
-    padding: 14px 24px 16px;
+    padding: 8px 18px 6px;
   }
 }
 

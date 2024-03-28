@@ -154,10 +154,10 @@ window.onload = function(){
       const endTxt = obj[l].endTxt;
 
       //tabArea
-      tabCont += "<div class='works-tab'>"
+      tabCont += "<button class='works-tab' role='button' tabindex='0'>"
       tabCont += "<div class='favicon_img' style='background-image: url("+faviconImg+");'></div>"
-      tabCont += "<h3>"+title+"</h3>"
-      tabCont += "</div>";
+      tabCont += "<span>"+title+"</span>"
+      tabCont += "</button>";
 
       TabContListArea.innerHTML = tabCont;
       TabContListArea.firstElementChild.classList.add('now-view');
@@ -233,6 +233,18 @@ window.onload = function(){
       });
     }
   }
+
+  const setMedia = e => {
+    if (window.matchMedia('(min-width: 797px)').matches) {
+      infoMain.classList.add('now-open');
+      document.querySelector('.info-bg').classList.add('openbg');
+    } else {
+      infoMain.classList.remove('now-open');
+      document.querySelector('.info-bg').classList.remove('openbg');
+    }
+  };
+  setMedia();
+  window.addEventListener('resize', () => setMedia());
 
 // Easter Egg
   darkMode.addEventListener('click', () => {
